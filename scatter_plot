@@ -1,0 +1,118 @@
+{
+ "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+ "width": 500,
+ "height": 400,
+ "title": "Top 50 flood events by displacement from 1985-2020",
+ "data": {
+ "url": "https://raw.githubusercontent.com/kjhug4/FIT3179/main/flood4.csv"
+ },
+
+"params": [
+{
+ "name": "Displaced_Above",
+ "value": 0,
+ "bind": {
+ "input": "range",
+ "min": 0,
+ "max": 40000000,
+ "step": 1000000,
+ "name": "Minimum Displaced: "
+ }
+},
+
+
+ {
+ "name": "Country_selection",
+ "bind": {
+ "input": "select",
+ "options": [
+ null,
+ "India",
+ "Bangladesh",
+ "Cambodia",
+ "China",
+ "India",
+ "Nepal",
+ "Nicaragua",
+ "Pakistan",
+ "Philippines",
+ "Tanzania",
+ "Thailand"
+ ],
+ "labels":[
+ "Show All",
+ "India",
+ "Bangladesh",
+ "Cambodia",
+ "China",
+ "India",
+ "Nepal",
+ "Nicaragua",
+ "Pakistan",
+ "Philippines",
+ "Tanzania",
+ "Thailand"
+ ],
+ "name": "Country Selection: "
+ }
+ }
+ ],
+
+
+
+"transform":[
+    {"filter": "Country_selection == null || datum.Country == Country_selection"},
+{"filter": "datum.Displaced > Displaced_Above"}
+
+],
+
+
+
+
+ "mark": "circle",
+ 
+ "selection": {
+ "country_highlight": {"type": "multi","fields": ["Country"],"bind": "legend"},
+ "area_highlight": {"type": "multi","fields": ["Area"],"bind": "legend"}
+ },
+
+ 
+
+
+ "encoding": 
+ {
+ 
+ "x": { "field": "Displaced", "type": "quantitative","axis":{"tickCount": 6}, "scale": {"type": "log", "domain": [1000000, 100000000]}, "title": "Displaced"},
+
+
+ "y": {"field": "Dead","type": "quantitative","axis":{"tickCount": 6}, "scale": {"type": "log", "domain": [1, 100000]}, "title": "Dead"},
+ 
+ "color": {"field": "Country","type": "nominal"},
+
+
+"opacity": {
+ "condition": {"selection": "country_highlight", "value": 0.8},
+ "value": 0.1
+ },
+
+
+
+ "size": {"field": "Area", "type": "quantitative", "scale": {"type":"threshold", "domain":[15622, 332399, 649176, 965953, 1282730, 1599507, 1916284], "range":[10,50,150,200,300,400]}}, 
+
+"tooltip": [
+ {"field": "Country", "type": "nominal"},
+ {"field": "Dead", "type": "quantitative", "format": ","},
+ {"field": "Displaced", "type": "quantitative", "format": ","},
+ {"field": "Area", "type": "quantitative", "format": ","},
+ {"field": "Severity", "type": "quantitative", "format": ","},
+ {"field": "MainCause", "type": "nominal"}
+ ]
+
+
+
+
+
+ }
+
+
+}
