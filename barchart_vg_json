@@ -1,0 +1,24 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "description": "A simple pie chart with embedded data.",
+  "data": {
+    "values": [
+      {"category": "India", "value": 18},
+      {"category": "Bangladesh", "value": 10},
+      {"category": "Cambodia", "value": 1},
+      {"category": "China", "value": 13},
+      {"category": "Nepal", "value": 1},
+      {"category": "Nicaragua", "value": 1},
+      {"category": "Pakistan", "value": 2},
+      {"category": "Philippines", "value": 1},
+      {"category": "Tanzania", "value": 1},
+      {"category": "Thailand", "value": 1}
+    ]
+  },
+  "mark": "arc",
+  "encoding": {
+    "theta": {"field": "value", "type": "quantitative"},
+    "color": {"field": "category", "type": "nominal"}
+  },
+  "view": {"stroke": null}
+}
