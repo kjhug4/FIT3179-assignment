@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-  "title": "Top 50 floods events by displacement from 1985-2020",
+  "title": "Top 50 floods events by Death from 1985-2020",
   "width": 800,
   "height": 600,
   "data": {
@@ -20,7 +20,7 @@
         "fields": ["Dead"]
       }
     },
-    {"calculate": "datum.Dead + 1", "as": "Dead"}
+    {"calculate": "datum.Dead + 1", "as": "Deaths"}
   ],
   "projection": {
     "type": "equirectangular"
@@ -30,7 +30,7 @@
     },
   "encoding": {
     "color": {
-      "field": "Dead",
+      "field": "Deaths",
       "type": "quantitative",
       "scale": {"type": "log"}
     },
