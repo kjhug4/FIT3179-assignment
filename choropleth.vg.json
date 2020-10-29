@@ -1,8 +1,8 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
   "title": "Top 50 floods events by Death from 1985-2020",
-  "width": 800,
-  "height": 600,
+  "width": 900,
+  "height": 400,
   "data": {
     "url": "https://raw.githubusercontent.com/kjhug4/FIT3179/main/ne_110m.json",
     "format": {
