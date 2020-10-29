@@ -17,7 +17,7 @@
   },
   "mark": "bar",
   "encoding": {
-    "x": {"field": "cause", "type": "nominal", "axis": {"labelAngle": 0}},
+    "x": {"field": "cause", "type": "nominal", "axis": {"labelAngle": 20}},
     "y": {"field": "b", "type": "quantitative"}
 
   }
