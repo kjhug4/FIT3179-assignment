@@ -14,7 +14,7 @@
       "lookup": "properties.NAME",
       "from": {
         "data": {
-          "url": "https://raw.githubusercontent.com/kjhug4/FIT3179/main/flood4.csv"
+          "url": "https://raw.githubusercontent.com/kjhug4/FIT3179-assignment/main/flood4.csv"
         },
         "key": "Country",
         "fields": ["Dead"]
