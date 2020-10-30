@@ -1,4 +1,4 @@
-ID,GlideNumber,Country,OtherCountry,long,lat,Area,Began,Ended,Validation,Dead,Displaced,MainCause,Severity,Population
+id,GlideNumber,Country,OtherCountry,long,lat,Area,Began,Ended,Validation,Dead,Displaced,MainCause,Severity,Population
 1413,0,Bangaldesh,India,91.8551,25.9513,116176.66,05-07-98,22-09-98,News,2632,25000000,Monsoonal rain,2,161400000
 1527,0,Bangladesh,India,89.6291,25.5968,132357.54,11-07-99,03-08-99,News,356,33100003,Monsoonal rain,1,161400000
 972,0,Bangladesh,0,88.9998,25.7626,15621.62,04-07-95,22-07-95,News,250,15000000,Monsoonal rain,1,161400000
