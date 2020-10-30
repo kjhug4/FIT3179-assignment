@@ -4,7 +4,7 @@
  "height": 300,
  "title": "Top 50 flood events by displacement from 1985-2020",
  "data": {
- "url": "https://raw.githubusercontent.com/kjhug4/FIT3179/main/flood4.csv"
+ "url": "https://raw.githubusercontent.com/kjhug4/FIT3179-assignment/main/flood4.csv"
  },
 
 "params": [
