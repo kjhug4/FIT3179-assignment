@@ -8,12 +8,12 @@
   "data": {
     "values": [
 
-      {"cause": "Heavy monsoon rains", "b": 1,"color":"#a6cee3"}, 
-      {"cause": "Brief torrential rain", "b": 1,"color":"#1f78b4"},
-      {"cause": "torrential rain", "b": 2,"color":"#fb9a99"}, 
-      {"cause": "Heavy rain", "b": 14,"color":"#33a02c"}, 
-      {"cause": "monsoonal rain", "b": 26,"color":"#b2df8a "}, 
-      {"cause": "tropical cyclone", "b": 5,"color":"#fdbf6f"}
+      {"cause": "Heavy monsoon rains", "Number of Flood Events": 1,"color":"#a6cee3"}, 
+      {"cause": "Brief torrential rain", "Number of Flood Events": 1,"color":"#1f78b4"},
+      {"cause": "torrential rain", "Number of Flood Events": 2,"color":"#fb9a99"}, 
+      {"cause": "Heavy rain", "Number of Flood Events": 14,"color":"#33a02c"}, 
+      {"cause": "monsoonal rain", "Number of Flood Events": 26,"color":"#b2df8a "}, 
+      {"cause": "tropical cyclone", "Number of Flood Events": 5,"color":"#fdbf6f"}
     ]
   },
   "mark": "bar",
