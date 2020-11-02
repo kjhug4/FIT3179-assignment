@@ -18,7 +18,7 @@
   },
   "mark": "bar",
   "encoding": {
-    "x": {"field": "Cause", "type": "nominal", "axis": {"labelAngle": 20}},
+    "x": {"field": "cause", "type": "nominal", "axis": {"labelAngle": 20}},
     "y": {"field": "Number of Flood Events", "type": "quantitative"},
       "color": {
       "field": "color",
